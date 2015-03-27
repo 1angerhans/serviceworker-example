@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/app.css">
+    <script src="/assets/jquery-1.11.2.min.js"></script>
+    <script src="/assets/app.js"></script>
+</head>
+<body>
+<div id="feeds"></div>
+<script>
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js',
+                {scope: '/'})
+                .then(function() {
+                    console.log('Service worker resisted');
+                })
+                .catch(function(error) {
+                    console.log('Service worker faild');
+                });
+    }
+</script>
+</body>
+</html>

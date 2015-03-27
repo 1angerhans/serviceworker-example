@@ -1,0 +1,8 @@
+body {font-size: 30px;}
+
+.feed {clear: both;}
+
+.field {float: left;}
+
+.name {width: 300px; font-weight: bold;}
+.office {width: 150px;}
